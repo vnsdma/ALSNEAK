@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALSNEAK</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            /* Adjust the styles for smaller screens */
+            .nav-tengah {
+                display: none;
+            }
+
+            .nav-tengah.responsive {
+                display: block;
+            }
+
+            .nav-tengah.responsive ul {
+                flex-direction: column;
+            }
+
+            .header-kiri {
+                text-align: center;
+            }
+
+            .header-kanan {
+                display: none;
+            }
+
+            .header-menu {
+                display: none;
+            }
+
+            .container-dalam {
+                padding: 20px;
+            }
+
+            .header-produk {
+                text-align: center;
+            }
+
+            .luar-header-box {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .footer-kiri,
+            .footer-kanan {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- akhir nav -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-kiri">
+                <h1>ALSNEAK</h1>
+            </div>
+            <div class="nav-tengah">
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="nav-tengah responsive">
+                <ul>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/register">REGISTER</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir nav -->
+
+    <!--awal header  -->
+    <header id="beranda">
+        <div class="header-kiri" id="">
+            <h1>ALSNEAK INDONESIA</h1>
+            <h2>Kami Adalah Suplier Sepatu Berkualitas Di Indonesia, Dengan Pengalaman Lebih Dari 10 Tahun Menjadi Produsen Sepatu</h2>
+            <button onclick="window.location.href='#produk'">Cek Produk</button>
+        </div>
+
+        <div class="header-kanan">
+            <div class="span"></div>
+            <div class="img"></div>
+        </div>
+    </header>
+    <!--akhir header  -->
+
+    <div class="header-menu">
+        <!--awal header menu icon  -->
+        <div class="dalam-header-menu">
+            <div class="header-menu-i">
+                <i class="fas fa-shield-alt"></i>
+                <span>Find Your Dream Shoes</span>
+            </div>
+
+            <div class="header-menu-i">
+                <i class="fas fa-shield-alt"></i>
+                <span>Our Best Shoe Guarantee</span>
+            </div>
+
+            <div class="header-menu-i">
+                <i class="fas fa-lock"></i>
+                <span>1000% Safe Transactions</span>
+            </div>
+
+            <div class="header-menu-i">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Best Quality Shoes</span>
+            </div>
+        </div>
+        <!--akhir header menu icon  -->
+    </div>
+
+    <!--awal header produk  -->
+    <div class="container-dalam" id="produk">
+        <div class="header-produk">
+            <div class="dalam-header-produk">
+                <h2>Produk Kami</h2>
+                <div class="menu-dua">
+                    <ul>
+                        <li><a href="">Semua</a></li>
+                        <li><a href="">Pria</a></li>
+                        <li><a href="">Wanita</a></li>
+                        <li><a href="">Anak</a></li>
+                        <li><a href="">Olahraga</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="luar-header-box">
+            <div class="header-box">
+                <div class="box-kotak">
+                    <div class="img" id="satu"></div>
+                    <h3>Produk Kami</h3>
+                    <div class="bintang">
+                        <img src="static/icon/star.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+                <i class="fas fa-plus"></i>
+            </div>
+
+            <div class="header-box">
+                <div class="box-kotak">
+                    <div class="img" id="dua"></div>
+                    <h3>featured properties</h3>
+                    <div class="bintang">
+                        <img src="static/icon/star.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <i class="fas fa-plus"></i>
+            </div>
+
+            <div class="header-box">
+                <div class="box-kotak">
+                    <div class="img" id="tiga"></div>
+                    <h3>featured properties</h3>
+                    <div class="bintang">
+                        <img src="static/icon/star.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+                <i class="fas fa-plus"></i>
+            </div>
+
+            <div class="header-box">
+                <div class="box-kotak">
+                    <div class="img" id="empat"></div>
+                    <h3>featured properties</h3>
+                    <div class="bintang">
+                        <img src="static/icon/star.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <i class="fas fa-plus"></i>
+            </div>
+
+            <div class="header-box">
+                <div class="box-kotak">
+                    <div class="img" id="lima"></div>
+                    <h3>featured properties</h3>
+                    <div class="bintang">
+                        <img src="static/icon/star.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <i class="fas fa-plus"></i>
+            </div>
+
+            <div class="header-box">
+                <div class="box-kotak">
+                    <div class="img" id="enam"></div>
+                    <h3>featured properties</h3>
+                    <div class="bintang">
+                        <img src="static/icon/star.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+
+        <div class="kontak-container" id="kontak">
+            <div class="kontak-gambar">
+                <img src="static/images/1.jpg" alt="Gambar Kontak">
+            </div>
+
+            <div class="kontak-info">
+                <h2>Hubungi Kami</h2>
+                <p>Jl. Kaliurang No. 08</p>
+                <p>Sleman, Daerah Istimewa Yogyakarta</p>
+                <p>Email: alsneakears@gmail.com</p>
+                <p>Telepon: (012) 345-6789</p>
+
+                <form action="#" method="post" class="kontak-formulir">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="dalam-footer">
+                <div class="footer-kiri">
+                    <div class="fk-satu">
+                        <h3>Menu Utama</h3>
+                        <p>Beranda</p>
+                        <p>Produk</p>
+                        <p>Kontak</p>
+                    </div>
+                    <div class="fk-satu">
+                        <h3>Hubungi Kami</h3>
+                        <p>FAQ</p>
+                        <p>Keluhan Konsumen</p>
+                        <p>Kontak Pertanyaan</p>
+                        <p>Pusat Bantuan</p>
+                    </div>
+                    <div class="fk-satu">
+                        <h3>Tentang Produk</h3>
+                        <p>Harga</p>
+                        <p>Terlaris</p>
+                        <p>Terbaru</p>
+                    </div>
+                </div>
+                <div class="footer-kanan">
+                    <div class="footer-icon">
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <p> Copyright Alsneakers ©2024.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!--akhir header properties  -->
+    <link rel="javascript" type="text/javascript" href="{{ url_for('static', filename='bbd4b7d5bb.js') }}">
+</body>
+
+</html>
